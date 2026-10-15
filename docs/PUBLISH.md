@@ -4,9 +4,10 @@
 
 Проект подготовлен как самостоятельный репозиторий. Создайте на GitHub пустой репозиторий `bfc50-tools`, без автоматического README и LICENSE. В командах замените `YOUR_LOGIN` своим логином.
 
-Из корня этого проекта:
+Из корня этого проекта, после установки по README:
 
 ```bash
+source .venv/bin/activate
 python -m unittest discover -s tests -v
 git status
 git diff --check

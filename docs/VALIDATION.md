@@ -23,6 +23,7 @@ These tests confirm serial configuration exchange, not measured RF frequency, po
 The unit suite uses only synthetic memory images and a serial radio simulator. It covers CSV validation, BCD encoding, memory boundaries, wrong baselines, complete readback, echo variants, session changes, lost ACKs, successful/failed rollback, checksum checks and dry-run behavior. Run:
 
 ```bash
+source .venv/bin/activate
 python -m unittest discover -s tests -v
 ```
 

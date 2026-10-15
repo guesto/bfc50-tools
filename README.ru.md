@@ -41,7 +41,9 @@ python -m pip install -e .
 bfc50 --help
 ```
 
-Под Windows активация в PowerShell: `.venv\Scripts\Activate.ps1`, пример порта — `COM3`. Вместо команды `bfc50` можно использовать `python -m bfc50_tools`.
+Все дальнейшие команды выполняются из корня проекта с активированным `.venv`. В новом терминале повторите `source .venv/bin/activate`. В Ubuntu вне окружения используйте `python3`; после активации доступна команда `python`. Для выхода из окружения выполните `deactivate`.
+
+Под Windows создайте окружение командой `python -m venv .venv`; активация в PowerShell: `.venv\Scripts\Activate.ps1`, пример порта — `COM3`. Вместо команды `bfc50` можно использовать `python -m bfc50_tools`.
 
 ## Подключение и резервная копия
 
@@ -138,7 +140,10 @@ bfc50 write --port /dev/ttyUSB0 --plan plans/radio1-custom.json --apply
 
 ## Тестирование и разработка
 
+Из корня проекта после установки зависимостей:
+
 ```bash
+source .venv/bin/activate
 python -m unittest discover -s tests -v
 python -m compileall -q bfc50_tools
 python -m bfc50_tools --help

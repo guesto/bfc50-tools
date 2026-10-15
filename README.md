@@ -41,7 +41,9 @@ python -m pip install -e .
 bfc50 --help
 ```
 
-On Windows activate with `.venv\Scripts\Activate.ps1` in PowerShell and use a port such as `COM3`. Commands can also be invoked as `python -m bfc50_tools`.
+Run all subsequent commands from the project root with `.venv` activated. In a new terminal, repeat `source .venv/bin/activate`. On Ubuntu use `python3` outside the environment; activation makes `python` available. Run `deactivate` to leave the environment.
+
+On Windows create the environment with `python -m venv .venv`, activate with `.venv\Scripts\Activate.ps1` in PowerShell and use a port such as `COM3`. Commands can also be invoked as `python -m bfc50_tools`.
 
 ## Connect and back up
 
@@ -138,7 +140,10 @@ Use `--unused preserve` when the profile contains only the slots you want to upd
 
 ## Tests and development
 
+From the project root after installing dependencies:
+
 ```bash
+source .venv/bin/activate
 python -m unittest discover -s tests -v
 python -m compileall -q bfc50_tools
 python -m bfc50_tools --help
