@@ -28,7 +28,7 @@ git commit -m "Add BF-C50 configuration tools and bilingual documentation"
 
 ```bash
 git tag -a v0.1.0 -m "Initial experimental release"
-git remote add origin https://github.com/YOUR_LOGIN/bfc50-tools.git
+git remote add origin git@github.com:YOUR_LOGIN/bfc50-tools.git
 git push -u origin main
 git push origin v0.1.0
 ```
