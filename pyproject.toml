@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bfc50-tools"
+version = "0.1.0"
+description = "Experimental BF-C50 channel backup, planning and verified programming tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-or-later"}
+dependencies = ["pyserial==3.5"]
+
+[project.scripts]
+bfc50 = "bfc50_tools.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bfc50_tools*"]
+
+[tool.setuptools.package-data]
+bfc50_tools = ["profiles/*.csv"]

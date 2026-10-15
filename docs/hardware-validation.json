@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-15",
+  "platform": "Ubuntu 26.04.1, Python 3.14.4, PySerial 3.5, PL2303",
+  "packaged_read": "passed",
+  "temporary_change": "channel 16 TX/RX CTCSS OFF to 91.5 Hz",
+  "write_and_full_readback": "passed",
+  "restoration_and_full_readback": "passed",
+  "independent_verify": "passed",
+  "changed_channel_records": [
+    16
+  ],
+  "baseline_sha256": "a109fd34ccce4c22985af864aae2838ff70fb47f52f4eb062ba3d82b74151faa",
+  "temporary_sha256": "6b44662208cb3fa505b7e2c9d3bbe4d95300b5030d45872609ff31103e300519",
+  "restored_sha256": "a109fd34ccce4c22985af864aae2838ff70fb47f52f4eb062ba3d82b74151faa",
+  "original_memory_fully_restored": true,
+  "rf_measurements": "not performed"
+}
